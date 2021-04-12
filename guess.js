@@ -13,11 +13,12 @@
 //Event is something that happens on the page. Event listener waits for event and reacts
 //First arg to event listener is the type of event. Second arg is a function with event handler functionality
 
-const secretNumber = Math.trunc(Math.random() * 20 + 1);
+let secretNumber = Math.trunc(Math.random() * 20 + 1);
 
 let score = 20;
 
-document.querySelector(".number").textContent = secretNumber;
+document.querySelector(".number").textContent = "?";
+console.log(secretNumber);
 document.querySelector(".check").addEventListener("click", () => {
   const guess = parseInt(document.querySelector(".guess").value);
 
@@ -29,7 +30,9 @@ document.querySelector(".check").addEventListener("click", () => {
     // When player wins
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "🎉 You guessed it!";
+    document.querySelector(".number").textContent = secretNumber;
     document.querySelector("body").style.backgroundColor = "#60b347";
+    document.querySelector(".number").style.width = "30rem";
 
     // When guess is too high
   } else if (guess > secretNumber) {
@@ -38,7 +41,7 @@ document.querySelector(".check").addEventListener("click", () => {
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      document.querySelector(".message").textContent = "😞 You lost the game!";
+      document.querySelector(".message").textContent = "😞 Game over!";
       document.querySelector(".score").textContent = 0;
       document.querySelector("body").style.backgroundColor = "#990022";
     }
@@ -49,16 +52,26 @@ document.querySelector(".check").addEventListener("click", () => {
       score--;
       document.querySelector(".score").textContent = score;
     } else {
-      document.querySelector(".message").textContent = "😞 You lost the game!";
+      document.querySelector(".message").textContent = "😞 Game over!";
       document.querySelector(".score").textContent = 0;
-      document.querySelector("body").style.backgroundColor = "#990022";
+      document.querySelector("body").style.backgroundColor = "#990022"; //style must be a string
     }
   }
 });
 
 document.querySelector(".again").addEventListener("click", () => {
   console.log("play again clicked");
-  document.querySelector(".score").textContent = 20;
-  document.querySelector(".guess").value = null;
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20 + 1);
+  document.querySelector(".message").textContent = "Start guessing...";
+
+  //displays reset score
+  document.querySelector(".score").textContent = score;
+
+  document.querySelector(".guess").value = "";
+  document.querySelector(".number").textContent = "?";
+
+  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector(".number").style.width = "15rem";
+
 });
-// maniuplate CSS styles using JS
