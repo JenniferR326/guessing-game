@@ -1,4 +1,4 @@
-# guessing-game
+# Guessing Game
 
 ### A simple guessing game I built with DOM manipulation and event handlers
 
