@@ -17,11 +17,15 @@ When you guess the secret number correctly, the game will celebrate your win!
 You start with a score of 20.
 For every incorrect guess, you lose 1 point.
 The highest score achieved during a session is displayed as the "High Score."
-Winning
+
+# Winning
+
 Guess the secret number correctly to win the game!
 Your winning streak is acknowledged with a celebration, and the secret number is revealed.
 If you achieve a new high score, it will be updated.
-Game Over
+
+# Game Over
+
 If you run out of points (score reaches 0), the game is over.
 You can restart the game by clicking the "Try Again" button.
 Customization
