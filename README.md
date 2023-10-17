@@ -1,4 +1,4 @@
-# Play [here](https://jenniferr326.github.io/guessing-game/)
+# Try it [here](https://jenniferr326.github.io/guessing-game/)
 
 # Number Guessing Game
 
