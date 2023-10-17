@@ -1,10 +1,10 @@
-### Play [here](https://jenniferr326.github.io/guessing-game/)
+# Play [here](https://jenniferr326.github.io/guessing-game/)
 
-Number Guessing Game
+# Number Guessing Game
 
 Welcome to the Number Guessing Game! This is a simple web-based game where the player tries to guess a randomly generated number between 1 and 20.
 
-How to Play
+# How to Play
 
 When you open the game, the web page displays a "?" for the secret number.
 Enter your guess in the input field and click the "Check" button.
@@ -12,7 +12,7 @@ You'll receive feedback on whether your guess is too high or too low.
 Keep guessing until you correctly guess the secret number.
 When you guess the secret number correctly, the game will celebrate your win!
 
-Scoring
+# Scoring
 
 You start with a score of 20.
 For every incorrect guess, you lose 1 point.
@@ -31,9 +31,9 @@ Secret Number Range: By modifying the code, you can change the range of the secr
 
 Starting Score: You can change the initial score for each new game.
 
-Technical Details
+# Technical Details
 
 This game is implemented in HTML, CSS, and JavaScript. It uses a random number generator to select the secret number and provides feedback based on the player's input.
 
-Acknowledgments
+# Acknowledgments
 This game was created as a fun and educational project. Feel free to use, modify, and learn from the code as you see fit.
