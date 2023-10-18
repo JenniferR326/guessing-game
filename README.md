@@ -1,5 +1,3 @@
-# Try it [here](https://jenniferr326.github.io/guessing-game/)
-
 # Number Guessing Game
 
 Welcome to the Number Guessing Game! This is a simple web-based game where the player tries to guess a randomly generated number between 1 and 20.
